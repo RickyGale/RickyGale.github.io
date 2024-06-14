@@ -24,9 +24,9 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
+    name: "Riccardo Galeazi"
+    tagline: Game Developer
+    location: "Turin, Italy"
     photo: profile.jpg
   social:
     title: Links
