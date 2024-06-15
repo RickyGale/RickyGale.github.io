@@ -32,23 +32,11 @@ params:
     title: Links
     list:
       - icon: fab fa-linkedin-in
-        url: "#"
+        url: "https://www.linkedin.com/in/riccardo-galeazzi-?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZuexSutsQPWYgZtdVvpYTQ%3D%3D"
         title: LinkedIn
-      - icon: fab fa-github
-        url: "#"
-        title: GitHub
-      - icon: fab fa-twitter
-        url: "#"
-        title: Twitter
-      - icon: fab fa-orcid
-        url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
-        title: ResearchGate
+      - icon: fab fa-instagram
+        url: "https://www.instagram.com/ricky.gale01/"
+        title: Instagram
   showInAccordion:
     - item: aboutme
       expand: true
@@ -61,40 +49,28 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: I'm a young game developer who just graduated, I always had the passion for gaming and that is why I decided to study game development. 
   experience:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
+      - position: Software Developer, stage
+        dates: 02/2024 - 06/2024
+        company: TXT Group
         details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+          - Studied the software and did testing for the new version
+          - Created new tutorials of their software
+      
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
       - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
+        college: ITS-ICT Torino
+        dates: 2022 - 2024
+        thesis_title: "Developing tutorial in unity editor"
         thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+      
   publication:
     title: Publications
     icon: fas fa-book
@@ -152,16 +128,24 @@ params:
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Skill 1, Skill 2"
-        skillrating: 90
-      - skill: Skill 3
-        skillrating: 80
-      - skill: Skill 4
+      - skill: "Unrel Engine"
+        skillrating: 70
+      - skill: "unity"
+        skillrating: 60
+      - skill: C++
+        skillrating: 35
+      - skill: C#
+        skillrating: 35
+      - skill: Video & Photo editing
+        skillrating: 45
+      - skill: AI image & video editing
         skillrating: 50
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
     list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - hobby: Video Gaming
+      - hobby: Fitness
+      - hobby: Ski
+      - hobby: Coding
+      - hobby: 
