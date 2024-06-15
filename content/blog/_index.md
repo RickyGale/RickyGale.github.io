@@ -1,4 +1,4 @@
 ---
-title: "aafu theme"
+title: "My horror game"
 weight: 100
 ---
