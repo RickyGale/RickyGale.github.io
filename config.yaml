@@ -70,43 +70,6 @@ params:
         dates: 2022 - 2024
         thesis_title: "Developing tutorial in unity editor"
         thesis_url: "#"
-      
-  publication:
-    title: Publications
-    icon: fas fa-book
-    format:
-      - date
-      - title
-      - authors
-      - journal
-    types:
-      - Journal Articles
-      - Proceedings
-    list:
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Proceedings
   project:
     title: Projects
     icon: fas fa-project-diagram
