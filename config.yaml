@@ -27,7 +27,7 @@ params:
     name: "Riccardo Galeazi"
     tagline: Game Developer
     location: "Turin, Italy"
-    photo: profileP.jpg
+    photo: profile.jpg
   social:
     title: Links
     list:
@@ -42,7 +42,7 @@ params:
       expand: true
     - item: experience
     - item: education
-    - item: publication
+    
     - item: project
     - item: skill
     - item: hobby
@@ -65,7 +65,7 @@ params:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
+      - degree: Game developer
         college: ITS-ICT Torino
         dates: 2022 - 2024
         thesis_title: "Developing tutorial in unity editor"
@@ -74,18 +74,13 @@ params:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: Project 1
+      - title: Unrel Engine films
+        url: "https://www.instagram.com/ricky.gale01/"
+        description: Short film made in unreal engine
+      - title: My Horror
         url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+        description: Horro/survival game made in unreal engine 
+      
   skill:
     title: Skills
     panelId: skill-panel
