@@ -1,14 +1,14 @@
-baseURL: https://aafu.pages.dev/
+baseURL: https://rickygale.github.io/
 languageCode: en-us
 build:
   writeStats: true
 params:
-  title: aafu theme
-  author: Darshan Baral
+  title: RickyGale
+  author: Riccardo Galeazzi
   description: Website title
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+    [GitHub](https://rickygale.github.io/)
   theme:
     mainTheme: dark
     showAttribute: true
