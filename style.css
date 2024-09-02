@@ -305,16 +305,54 @@ section{
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+
 @media only screen and (max-width: 1030px) {
     
+    .Certificates-grid {
+        margin-top: 0vh; /* adjust the value to your needs */
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-right: 60px;
+        padding-bottom: 30px;
+        padding-left: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        overflow-y: auto;
+        max-height: 80vh;
+        width: 80%; /* set a fixed width to center the grid */
+        max-width: 80%; /* set a maximum width to prevent the grid from getting too wide */
+        background-color: #f7f7f7; /* light gray background */
+        border-radius: 20px; /* rounded corner effect */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* subtle shadow effect */
+        background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        transition: background-position 0.5s ease-out;
+    }
+
+    .Certificate-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #a518aa; /* add a border to the bottom of each item */
+        padding-bottom: 20px; /* add some padding to create space between items */
+        margin-bottom: 20px; /* add some margin to create space between items */
+    }
     
+    .Certificate-item:last-child {
+        border-bottom: none; /* remove the border from the last item */
+        margin-bottom: 0; /* remove the margin from the last item */
+    }
     body {
       overflow-y: auto; /* allow the page to scroll vertically */
     }
     .main-container {
       display: flex; /* display the main container as a flex container */
       flex-direction: column; /* change the flex direction to column */
-      height: 100vh; /* set the height of the main container to the full height of the viewport */
+      height: auto; /* set the height of the main container to the full height of the viewport */
     }
     .content-and-photo {
       display: flex; /* display the content and photo container as a flex container */
