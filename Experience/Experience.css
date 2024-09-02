@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 0.5), rgba(255, 0, 255, 0.5), rgba(128, 0, 0, 0.5));
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #33CCFF; /* Neon blue */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.281);
+}
+
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #FFC67D; /* Neon orange */
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+.nav-container .links{
+    display: flex;
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: #FFFFFF; /* White */
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #33CCFF; /* Neon blue */
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.nav-container .links a:hover{
+    color: #FFC67D; /* Neon orange */
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 40px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    background-color: #33CCFF; /* Neon blue */
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: #33CCFF; /* Neon blue */
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+.Experience-container {
+    max-width: 50%;
+    max-height: 60%; /* adjust the max-width here */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* add this to clip the grid items */
+}
+
+.Experience-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+  
+.Experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF; /* White */
+    margin-bottom: 20px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+  
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+.Experience-image {
+    max-width: 50%;
+    max-height: 50%; /* or a specific height value */
+    margin-bottom: 20px;
+    object-fit: cover; /* or contain, depending on your desired behavior */
+    border-radius: 20px;
+}
+
+.Experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or contain, depending on your desired behavior */
+    border-radius: 10px;
+}
+
+@media (max-width:884px) {
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,
+    .cancel{
+        display: block;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .social-links i{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container .image{
+        z-index: -1;
+        width: 50%;
+        height: 60%;
+    }
+    .Experience-container {
+        max-width: 80%;
+        max-height: 60%; /* adjust the max-width here */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f7f7f7; /* light gray background */
+        background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* add this to clip the grid items */
+    }
+}
+
+
+
+@media (max-width: 440px) {
+    .Experience-grid {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        overflow-y: auto;
+        max-height: 80vh;
+        margin: 20px auto;
+        max-width: 100vw;
+        background-color: #f7f7f7;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        transition: background-position 0.5s ease-out;
+    }
+
+    .Experience-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #a518aa; /* add a border to the bottom of each item */
+        padding-bottom: 20px; /* add some padding to create space between items */
+        margin-bottom: 20px; /* add some margin to create space between items */
+    }
+    
+    .Experience-item:last-child {
+        border-bottom: none; /* remove the border from the last item */
+        margin-bottom: 0; /* remove the margin from the last item */
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .Experience-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .Experience-container {
+        max-width: 80%;
+        max-height: 60%; /* adjust the max-width here */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f7f7f7; /* light gray background */
+        background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* add this to clip the grid items */
+    }
+}
