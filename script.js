@@ -51,3 +51,4 @@ const certificatesGrid = document.querySelector('.Certificates-grid');
 
 // Add a class to the element to hide the scrollbar
 certificatesGrid.classList.add('hide-scrollbar');
+
